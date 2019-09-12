@@ -1,0 +1,2 @@
+# ricbash
+My bash scripts.
