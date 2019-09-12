@@ -82,4 +82,9 @@ file_name=`zerotier-idtool genmoon moon.json | cut -d' ' -f 2`
 mkdir /var/lib/zerotier-one/moons.d
 cp $file_name /var/lib/zerotier-one/moons.d
 
-echo "moon节点创建成功，请重启zerotier或机器"
+#重启zerotier
+service zerotier-one restart
+
+moonid=`zerotier-cli info | cut -d' ' -f 3`
+echo "moon节点创建成功，请在客户端输入以下命令："
+echo "zerotier-cli orbit $moonid $moonid"

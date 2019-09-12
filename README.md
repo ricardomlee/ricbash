@@ -1,2 +1,4 @@
 # ricbash
-My bash scripts.
+自用 shell 脚本
+
+测试
