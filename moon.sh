@@ -49,7 +49,6 @@ else
     echo "请输入Network ID信息 (16位字符)："
     read netid
 fi
-
 check_netid $netid
 if [ "$?"x = "0"x ]; then
    echo "Network ID格式正确"
@@ -61,6 +60,17 @@ fi
 #安装zerotier one
 curl -s https://install.zerotier.com/ | sudo bash
 zerotier-cli join $netid
+
+#同意加入
+echo "请前往zerotier官网对应的网络设置内同意节点加入"
+read -p "完成操作后输入OK继续: " ok
+if [ "$ok" = "OK" ]; then
+    echo "继续"
+else
+    echo "输入错误，退出脚本！"
+    exit_script
+fi
+
 cd /var/lib/zerotier-one
 zerotier-idtool initmoon identity.public > moon.json
 

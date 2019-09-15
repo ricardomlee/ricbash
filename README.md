@@ -25,7 +25,7 @@ wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master
 
 - 脚本说明：检查node id格式
 
-- 下载使用：
+- 下载使用：（可传入一个参数作为id）
 
 ```shell
 wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/test.sh && chmod +x test.sh && bash test.sh
@@ -39,7 +39,7 @@ wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master
 
 - 脚本说明：VPS作为moon节点加入zerotier网络
 
-- 下载使用：
+- 下载使用：（可以将zerotier网络id作为脚本的参数，或运行后再输入）
 
 ```shell
 wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/moon.sh && chmod +x moon.sh && bash moon.sh
