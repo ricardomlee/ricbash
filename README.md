@@ -23,7 +23,7 @@ wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master
 
 - 测试脚本，测试环境（CentOS 7.6）
 
-- 脚本说明：获取node id
+- 脚本说明：检查node id格式
 
 - 下载使用：
 
