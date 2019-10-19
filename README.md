@@ -35,7 +35,7 @@ wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master
 
 ## moon.sh
 
-- 待测试，测试环境（CentOS 7.6）
+- 测试通过(2019.10.19)，测试环境（CentOS 7.6）
 
 - 脚本说明：VPS作为moon节点加入zerotier网络
 
