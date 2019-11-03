@@ -57,3 +57,26 @@ wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master
 ```shell
 wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/zerotier_firewall.sh && chmod +x zerotier_firewall.sh && bash zerotier_firewall.sh
 ```
+
+
+## ddns.sh
+
+- 可使用，测试环境（Padavan）
+- 脚本说明：输入ip修改域名解析记录
+
+- 下载使用：添加ip作为脚本参数
+
+```shell
+wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/ddns.sh && chmod +x ddns.sh && bash ddns.sh
+```
+
+## update_ip.sh
+
+- 可使用，测试环境（Ubuntu18.04）
+- 脚本说明：获取本机ip并召唤可访问外网的机器，将ip传入ddns脚本执行
+
+- 下载使用：
+
+```shell
+wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/update_ip.sh && chmod +x update_ip.sh && bash update_ip.sh
+```
