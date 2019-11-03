@@ -67,7 +67,10 @@ wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master
 - 下载使用：添加ip作为脚本参数
 
 ```shell
-wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/ddns.sh && chmod +x ddns.sh && bash ddns.sh
+wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/ddns.sh
+#修改ID Token domain等信息
+chmod +x ddns.sh
+./ddns.sh xxx.xxx.xxx.xxx
 ```
 
 ## update_ip.sh
@@ -78,5 +81,8 @@ wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master
 - 下载使用：
 
 ```shell
-wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/update_ip.sh && chmod +x update_ip.sh && bash update_ip.sh
+wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master/update_ip.sh
+#修改用户名，ssh服务器地址，ddns脚本路径
+chmod +x update_ip.sh
+./update_ip.sh
 ```
