@@ -86,3 +86,8 @@ wget -N --no-check-certificate https://github.com/ricardomlee/ricbash/raw/master
 chmod +x update_ip.sh
 ./update_ip.sh
 ```
+
+## hardlink.sh
+
+- 可使用，测试环境（unraid 6.7.2）
+- 脚本说明：对当前目录下所有子目录的视频创建硬链接
