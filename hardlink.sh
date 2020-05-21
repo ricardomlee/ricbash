@@ -8,10 +8,9 @@ do
 		for file in `ls`
 		do	
 			echo $file
-			if [ ${file:0-4} == ".mkv" ]; then
+			if [ ${file:0-4} == ".mkv" -o ${file:0-4} == ".mp4" ]; then
 				ln $file /mnt/disk2/Media/Movies/$file
 				echo $file ok
-				break
 			fi
 		done
 		cd ..
