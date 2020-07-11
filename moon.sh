@@ -75,7 +75,7 @@ cd /var/lib/zerotier-one
 zerotier-idtool initmoon identity.public > moon.json
 
 #获得公网ip
-PUBLIC_IP=$(curl ipecho.net/plain)
+PUBLIC_IP=$(curl ipinfo.io/ip)
 check_ipaddr "$PUBLIC_IP"
 if [ "$?"x = "0"x ]; then
    echo "公网IP地址：$PUBLIC_IP"
